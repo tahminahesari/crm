@@ -3,7 +3,10 @@ Documentation       This is some basis info about the whole suite
 Library             SeleniumLibrary
 
 #Run the script
+#robot.exe  tests/crm.robot
+#onderstaande commando is voor specificeren waar je results map wilt hebben; in dit geval in the roots of your project
 #robot -d results tests/crm.robot
+
 
 *** Variables ***
 
@@ -23,6 +26,9 @@ Should be able to add new customer
     # resize browser window for recoring
 #    Set Window Position    x=341    y=169
 #    Set Window Size    width=1935    height=1090
+
+    Click Link    login.html
+
 
     Sleep                   3s
     Close Browser
